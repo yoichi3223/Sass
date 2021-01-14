@@ -1,0 +1,33 @@
+.cat-icom {
+  background: url("cat.png");
+}
+
+.dog-icom {
+  background: url("dog.png");
+}
+
+.tiger-icom {
+  background: url("tiger.png");
+}
+
+body {
+  width: 90%;
+  height: 100vh;
+  background-color: red;
+}
+
+body p {
+  color: #ff9999;
+  font-size: 17px;
+}
+
+body p a {
+  text-decoration: none;
+  background-image: url("../img/image.jpg");
+}
+
+body p a:hover {
+  font-size: 5px;
+  font-weight: bold;
+}
+/*# sourceMappingURL=style.css.map */

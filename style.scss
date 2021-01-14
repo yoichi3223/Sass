@@ -1,0 +1,46 @@
+$color1: red;
+$font-size: 17px;
+$img: "../img/";
+$brandColor: red;
+$debugmode: false;
+//@if @else
+
+//lighten darken
+
+//@for
+//@while
+
+// @for $i from 1 through 14 {
+//   .fs#{$i} {
+//     font-size: #{$i}px;
+//   }
+// }
+
+$animals: cat, dog, tiger;
+
+@each $animal in $animals {
+  .#{$animal}-icom {
+    background: url("#{$animal}.png");
+  }
+}
+
+body {
+  @if $debugmode == true {
+    color: red;
+  }
+  width: 90%;
+  height: 100vh;
+  background-color: $brandColor;
+  p {
+    color: lighten($brandColor, 30%);
+    font-size: 17px;
+    a {
+      text-decoration: none;
+      background-image: url("#{$img}image.jpg");
+      &:hover {
+        font-size: $font-size - 12px;
+        font-weight: bold;
+      }
+    }
+  }
+}
